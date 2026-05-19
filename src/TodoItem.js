@@ -1,9 +1,11 @@
+import './TodoItem.css';
+
 function TodoItem (props) {
   return (
     <li>
-      <span>V</span>
-      <p>{props.text}</p>
-      <span>X</span>
+      <span className='complete'><img src='icon-check.svg' alt="Icon complete" /></span>
+      <p className={`${props.completed ? 'complete--active' : ''}`}>{props.text}</p>
+      <span className='delete'><img src='icon-delete.svg' alt="Icon delete" /></span>
     </li>
   );
 }

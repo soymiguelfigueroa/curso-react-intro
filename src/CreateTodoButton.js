@@ -1,6 +1,8 @@
+import './CreateTodoButton.css';
+
 function CreateTodoButton () {
   return (
-    <button>+</button>
+    <button><img src='icon-add.svg' alt="Icon add" /></button>
   );
 }
 
