@@ -54,8 +54,8 @@ function App() {
             key={todo.text} 
             text={todo.text} 
             completed={todo.completed}
-            onComplete={completeTodo}
-            onDelete={deleteTodo}
+            onComplete={() => completeTodo(todo.text)}
+            onDelete={() => deleteTodo(todo.text)}
           />
         ))}
       </TodoList>
