@@ -1,8 +1,20 @@
+import React from 'react';
 import './CreateTodoButton.css';
+import { TodoContext } from '../TodoContext';
 
 function CreateTodoButton () {
+  const {
+    setOpenModal,
+  } = React.useContext(TodoContext);
+  
   return (
-    <button><img src='icon-add.svg' alt="Icon add" /></button>
+    <button
+      onClick={() => {
+        setOpenModal(true)
+      }}
+      >
+      <img src='icon-add.svg' alt="Icon add" />
+    </button>
   );
 }
 
