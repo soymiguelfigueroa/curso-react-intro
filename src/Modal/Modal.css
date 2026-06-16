@@ -29,29 +29,3 @@
     /* Esclavo del posicionamiento absoluto */
     position: relative;
 }
-
-/* --- Botón de Cerrar --- */
-.Modal-close-button {
-    /* Posicionamiento en la esquina superior derecha */
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    
-    /* Limpieza de estilos por defecto del botón */
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    
-    /* Estilos visuales */
-    font-size: 24px; /* Tamaño de la X */
-    line-height: 1;  /* Evita que el botón sea más alto de lo normal */
-    color: #999999;  /* Gris suave por defecto */
-    cursor: pointer;
-    transition: color 0.2s ease; /* Transición suave para el hover */
-}
-
-/* Efecto al pasar el mouse por encima */
-.Modal-close-button:hover {
-    color: #333333; /* Se oscurece al pasar el cursor */
-}

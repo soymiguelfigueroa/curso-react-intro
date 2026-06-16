@@ -9,6 +9,7 @@ function CreateTodoButton () {
   
   return (
     <button
+      className='createTodo-button'
       onClick={() => {
         setOpenModal(true)
       }}
