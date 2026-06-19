@@ -1,6 +1,7 @@
 import React from 'react';
 import './CreateTodoButton.css';
 import { TodoContext } from '../TodoContext';
+import { ReactComponent as CreateSVG } from './add.svg';
 
 function CreateTodoButton () {
   const {
@@ -14,7 +15,9 @@ function CreateTodoButton () {
         setOpenModal(true)
       }}
       >
-      <img src='icon-add.svg' alt="Icon add" />
+      <CreateSVG
+        alt={"Icon add"}
+      />
     </button>
   );
 }
